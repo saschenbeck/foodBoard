@@ -13,6 +13,11 @@ public class Board {
     @Column(nullable = false, length = 45)
     private String boardName;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "board")
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name="boards_categories",
+            joinColumns={@JoinColumn(name="board_id")},
+            inverseJoinColumns={@JoinColumn(name="foodItem_id")}
+    )
     private List<foodItem> foodItems;
 }
