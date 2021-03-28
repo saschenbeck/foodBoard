@@ -15,4 +15,7 @@ public class foodItem {
 
     @ManyToMany(mappedBy = "foodItems")
     private List<Board> boards;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "foodItem")
+    private List<Allergen> allergens;
 }
