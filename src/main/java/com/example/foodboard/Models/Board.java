@@ -13,6 +13,6 @@ public class Board {
     @Column(nullable = false, length = 45)
     private String boardName;
 
-    @OneToMany(mappedBy = "boardName")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "board")
     private List<foodItem> foodItems;
 }
