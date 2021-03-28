@@ -1,6 +1,7 @@
 package com.example.foodboard.Models;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "foodItems")
@@ -11,4 +12,7 @@ public class foodItem {
 
     @Column
     String name;
+
+    @ManyToMany(mappedBy = "foodItems")
+    private List<Board> boards;
 }
