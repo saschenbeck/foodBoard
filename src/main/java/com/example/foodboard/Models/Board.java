@@ -25,6 +25,12 @@ public class Board {
 
     }
 
+    public Board(long id, String boardName, List<foodItem> foodItems){
+        this.id = id;
+        this.boardName = boardName;
+        this.foodItems = foodItems;
+    }
+
     public Board(String boardName, List<foodItem> foodItems){
         this.boardName = boardName;
         this.foodItems = foodItems;

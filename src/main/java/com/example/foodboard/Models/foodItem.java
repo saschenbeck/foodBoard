@@ -23,6 +23,13 @@ public class foodItem {
 
     }
 
+    public foodItem(long id, String name, List<Board> boards, List<Allergen> allergens){
+        this.id = id;
+        this.name = name;
+        this.boards = boards;
+        this.allergens = allergens;
+    }
+
     public foodItem(String name, List<Board> boards, List<Allergen> allergens){
         this.name = name;
         this.boards = boards;
