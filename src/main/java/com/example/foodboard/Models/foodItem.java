@@ -22,4 +22,10 @@ public class foodItem {
     public foodItem(){
 
     }
+
+    public foodItem(String name, List<Board> boards, List<Allergen> allergens){
+        this.name = name;
+        this.boards = boards;
+        this.allergens = allergens;
+    }
 }
