@@ -18,4 +18,8 @@ public class foodItem {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "foodItem")
     private List<Allergen> allergens;
+
+    public foodItem(){
+
+    }
 }
