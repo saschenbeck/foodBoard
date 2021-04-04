@@ -24,4 +24,9 @@ public class Board {
     public Board(){
 
     }
+
+    public Board(String boardName, List<foodItem> foodItems){
+        this.boardName = boardName;
+        this.foodItems = foodItems;
+    }
 }
