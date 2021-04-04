@@ -20,4 +20,8 @@ public class Board {
             inverseJoinColumns={@JoinColumn(name="foodItem_id")}
     )
     private List<foodItem> foodItems;
+
+    public Board(){
+
+    }
 }
