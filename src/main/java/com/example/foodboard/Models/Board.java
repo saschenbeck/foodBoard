@@ -29,4 +29,28 @@ public class Board {
         this.boardName = boardName;
         this.foodItems = foodItems;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getBoardName() {
+        return boardName;
+    }
+
+    public void setBoardName(String boardName) {
+        this.boardName = boardName;
+    }
+
+    public List<foodItem> getFoodItems() {
+        return foodItems;
+    }
+
+    public void setFoodItems(List<foodItem> foodItems) {
+        this.foodItems = foodItems;
+    }
 }
